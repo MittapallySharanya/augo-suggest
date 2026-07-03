@@ -2,6 +2,19 @@
 h1 {
   color: red;
 }
+#p2{
+    color: blue;
+
+
+}
+#home-intro:hover{
+    background-color: burlywood;
+
+}
 #home-intro{
     text-align: center;
+    /* border:3px;
+    border-color: black;
+    border-style: solid;*/
+    border: 3px solid blue;
 }
