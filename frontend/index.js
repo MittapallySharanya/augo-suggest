@@ -1,4 +1,3 @@
-
 const users = [
   {
     "name" :"Jane Doe",
@@ -25,3 +24,25 @@ function toggle(){
 }
 
 console.log("Hello from JS");
+function getRandomUser(){
+  fetch("https://randomuser.me/api")
+  .then(function(data){
+    return data.json();
+  })
+  .then(function(parsedData){
+    let first = parsedData.results[0].name.first;
+    let last = parsedData.results[0].name.last;
+    let name =first+" "+last; 
+    let gender = parsedData.results[0].gender;
+    let imageUrl = parsedData.results[0].picture.large;
+    //gender
+    document.getElementById("card-gender").innerText=gender;
+    //name
+    document.getElementById("card-name").innerText=name;
+    //image
+    document.getElementById("img").src=imageUrl;
+    console.log(name)
+    // Handle the JSON data
+  })
+
+}
