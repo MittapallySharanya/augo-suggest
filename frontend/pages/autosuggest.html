@@ -1,11 +1,62 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <body>
-        <span>&#9881; &bull; online | &#x1F552; - ms</span>
-        <h1>BeingInfinity</h1>
-        <p>One million phrase.Four algorithms.Prefix Based Auto Suggest.</p>
-        <span>&#x1F50D;<input placeholder="Start typing to search"></span>
-
-        </body>
+        <style>
+            .left-bar{
+                position: fixed;
+                top: 20px;
+                left: 20px;
+            }
+            .right-bar{
+                position: fixed;
+                top: 20px;
+                right:20px;
+            }
+            .section{
+                text-align: center;
+                margin: 100px;
+            }
+            .heading{
+                color: blueviolet;
+            }
+            .tag-line{
+                color: gray;
+            }
+            .lens{
+                position: relative;
+                left:40px;
+            }
+            .search-box{
+                padding: 15px 15px 15px 45px;
+                border-radius: 30px;
+                width: 30%;
+            }
+            #suggestion-box{
+                border: 1px solid black;
+                width: 30%;
+                margin-left:35%;
+                
+            }
+        </style>
     </head>
+<body>
+<div class="top-bar">
+    <span class="left-bar">&#9881;</span>
+    <span class="right-bar">&bull; online | &#x1F552; - ms</span>
+</div>
+
+<div class="section">
+    <h1><span class="heading">Being</span>Infinity</h1>
+
+    <p class="tag-line">One million phrase. Four algorithms. Prefix Based Auto Suggest.</p>
+
+    <span class="lens"> &#x1F50D;</span>
+    <input class="search-box" placeholder="Start typing to search">
+
+    <div id="suggestion-box">
+        Suggestion box
+    </div>
+</div>
+
+</body>
 </html>
